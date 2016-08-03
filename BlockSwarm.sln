@@ -1,0 +1,35 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2008
+
+Project("{AFA87993-18D1-765D-5C9E-C17C59D067A8}") = "BlockSwarm", "Assembly-CSharp-firstpass.csproj", "{A6A96029-C00C-4F5E-FE56-80A8C1D82123}"
+EndProject
+Project("{AFA87993-18D1-765D-5C9E-C17C59D067A8}") = "BlockSwarm", "Assembly-CSharp.csproj", "{A5987C56-2B9F-5156-CC11-511441C0FA48}"
+EndProject
+Project("{AFA87993-18D1-765D-5C9E-C17C59D067A8}") = "BlockSwarm", "Assembly-CSharp-Editor.csproj", "{E74A45B9-7C79-C1D8-90EB-3871B7EBCC6D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A6A96029-C00C-4F5E-FE56-80A8C1D82123}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A6A96029-C00C-4F5E-FE56-80A8C1D82123}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A6A96029-C00C-4F5E-FE56-80A8C1D82123}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A6A96029-C00C-4F5E-FE56-80A8C1D82123}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A5987C56-2B9F-5156-CC11-511441C0FA48}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A5987C56-2B9F-5156-CC11-511441C0FA48}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A5987C56-2B9F-5156-CC11-511441C0FA48}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A5987C56-2B9F-5156-CC11-511441C0FA48}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E74A45B9-7C79-C1D8-90EB-3871B7EBCC6D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E74A45B9-7C79-C1D8-90EB-3871B7EBCC6D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E74A45B9-7C79-C1D8-90EB-3871B7EBCC6D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E74A45B9-7C79-C1D8-90EB-3871B7EBCC6D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = Assembly-CSharp.csproj
+	EndGlobalSection
+EndGlobal
