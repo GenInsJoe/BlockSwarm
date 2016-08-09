@@ -22,22 +22,17 @@ public class PlayerMovement : MonoBehaviour {
         float speed = 0.2F;
         // Allow for keyboard movement
         float MoveHor = Input.GetAxis("Horizontal");
+        float MoveVert = Input.GetAxis("Vertical");
 
         // Allow for touchpad movement
         if (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Moved)
         {
             Vector2 TouchMov = Input.GetTouch(0).deltaPosition;
-            MoveHor = TouchMov.x;
+            MoveHor = TouchMov.y;
+            MoveVert = TouchMov.x;
         }
 
-        if(MoveHor > 0)
-        {
-            transform.Translate(speed, 0, 0);
-        }
-        else if (MoveHor < 0)
-        {
-            transform.Translate(-speed, 0, 0);
-        }
+            transform.Translate(-speed*MoveVert, speed*MoveHor, 0);
         
 
     }

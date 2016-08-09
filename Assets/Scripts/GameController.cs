@@ -8,18 +8,21 @@ using System.Collections.Generic;
 
 public class GameController : MonoBehaviour {
 
-    public GameObject pBlock;
+    public GameObject pBlock1;
+    public GameObject pBlock2;
     public GameObject aBlock;
     public float startBuffer;
     public float[] tBetween = { 2F, 4F, 6F };
-
+    private GameObject gmOvr; 
     private List<int> passiveIndecies;
     private List<int> activeIndecies;
     private GameObject[] spawnPoints;
+    private GameObject pBlock;
+    private GameObject startBut;
     private float activeBuffer = 0.5F; // the time between the spawning of the passive blocks and the active blocks
     private int maxPassiveBlocks = 4;
     private int score; // increases by one for every wave of blocks (including empty ones) that the player passes
-
+    
     public UnityEngine.UI.Text scoreboard;
 
 	// Game initialization
@@ -28,12 +31,22 @@ public class GameController : MonoBehaviour {
         score = 0;
         UpdateScore();
 
+        // find the game over game object
+        gmOvr = GameObject.FindGameObjectWithTag("Game over");
+
+        // hide the game over screen
+        gmOvr.SetActive(false);
         // initialize used index lists
         passiveIndecies = new List<int>();
         activeIndecies = new List<int>();
-        
         // get spawnpoints
         spawnPoints = GameObject.FindGameObjectsWithTag("Block spawners");
+
+        // get the start button
+        startBut = GameObject.FindGameObjectWithTag("StartBut");
+
+        // start the game paused
+        Time.timeScale = 0;
 
         // start the game loop
         StartCoroutine(SpawnBlocks());
@@ -48,6 +61,12 @@ public class GameController : MonoBehaviour {
         {
             // stop the blocks from spawning, and the score from increasing
             StopAllCoroutines();
+
+            // stop all movement on screen
+            Time.timeScale = 0;
+
+            // show the game over scene
+            gmOvr.SetActive(true);
         }
     }
 
@@ -89,7 +108,17 @@ public class GameController : MonoBehaviour {
             // spawn passive blocks first
             for(int i = 0; i < numP2Spawn; i++)
             {
-                
+                // get which block to spawn (blue or yellow)
+                if(Random.Range(1,10) % 2 == 0)
+                {
+                    pBlock = pBlock1;
+                }
+                else
+                {
+                    pBlock = pBlock2;
+                }
+
+                // spawn the new pBlock
                 Instantiate(pBlock, getPassiveSpawnLocation(), Quaternion.identity);
             }
 

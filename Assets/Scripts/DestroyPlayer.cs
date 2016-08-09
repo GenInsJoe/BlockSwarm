@@ -4,9 +4,12 @@ public class DestroyPlayer : MonoBehaviour {
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.tag == "Player")
+        if (other.tag == "KillerObj")
         {
-            Destroy(other.gameObject);
+            if (other.name != "Laser")
+            {
+                Destroy(other.gameObject);
+            }
             Destroy(gameObject);
         }
 
