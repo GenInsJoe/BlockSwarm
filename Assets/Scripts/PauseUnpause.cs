@@ -2,7 +2,7 @@
 using System.Collections;
 
 public class PauseUnpause : MonoBehaviour {
-
+    
     // continue/start the game
     public void Unpause()
     {

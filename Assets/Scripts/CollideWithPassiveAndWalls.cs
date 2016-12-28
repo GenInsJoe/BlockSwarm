@@ -8,12 +8,12 @@ public class CollideWithPassiveAndWalls : MonoBehaviour {
     {
         rb2d = GetComponent<Rigidbody2D>();
     }
-    void OnTriggerEnter2D(Collider2D other)
+    void OnTriggerExit2D(Collider2D other)
     {
-        if (other.tag == "Boundry")
+        if (other.tag == "Background")
         {
             print("collided with wall");
-            //rb2d.;
+            
         }
     }
 }

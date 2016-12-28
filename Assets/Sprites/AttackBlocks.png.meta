@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 91e1a05530cbecd4d85295ff2d3dc3ac
-timeCreated: 1469739595
+timeCreated: 1482176271
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -49,6 +49,7 @@ TextureImporter:
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spritePixelsToUnits: 100
   alphaIsTransparency: 1
+  spriteTessellationDetail: -1
   textureType: 8
   buildTargetSettings: []
   spriteSheet:
@@ -66,18 +67,20 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      tessellationDetail: -1
     - serializedVersion: 2
       name: AttackBlocks_1
       rect:
         serializedVersion: 2
         x: 777
         y: 1425
-        width: 565
+        width: 555
         height: 555
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 0, y: 0, z: 2, w: 0}
       outline: []
+      tessellationDetail: -1
     - serializedVersion: 2
       name: AttackBlocks_2
       rect:
@@ -90,6 +93,7 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      tessellationDetail: -1
     outline: []
   spritePackingTag: 
   userData: 

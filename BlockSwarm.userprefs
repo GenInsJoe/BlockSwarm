@@ -1,7 +1,8 @@
-﻿<Properties StartupItem="Assembly-CSharp.csproj">
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\CollideWithPassiveAndWalls.cs">
+﻿<Properties StartupItem="BlockSwarm.CSharp.Plugins.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\GameController.cs">
     <Files>
+      <File FileName="Assets\Scripts\GameController.cs" Line="38" Column="1" />
       <File FileName="Assets\Scripts\CollideWithPassiveAndWalls.cs" Line="16" Column="1" />
       <File FileName="Assets\Scripts\ActiveBlockMove.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\RestartCurScene.cs" Line="1" Column="1" />
